@@ -1,0 +1,38 @@
+/* 重置所有元素的内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 确保padding不会增加元素的总宽度 */
+}
+
+/* 设置body的背景颜色 */
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif; /* 可选：为页面添加字体样式 */
+}
+
+/* 设置header的样式 */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* 确保透明度正确 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /* 确保header在页面最上层 */
+}
+
+/* 设置.title2的样式 */
+.title2 {
+    color: cornflowerblue;
+    text-align: center; /* 使标题水平居中 */
+    padding: 10px 0; /* 给标题一些内边距 */
+    position: relative; /* 由于我们要使用transform，所以这里使用relative */
+}
+
+/* 设置.title的样式 */
+.title {
+    font-size: 30px;
+    color: black;
+    text-align: center; /* 使文本水平居中 */
+    margin-top: 50px; /* 给标题一些顶部外边距，以确保它不会紧挨着header */
+}
